@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background: #f0f0f0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    animation: fadeInDown 2s ease-out;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: fadeInUp 2s ease-out;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    animation: fadeInUp 2s ease-out;
+}
+
+.about {
+    padding: 4rem 0;
+    background: #fff;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.about-content p {
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    color: #555;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeInUp 2s ease-out;
+}
+
+.team-member img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #777;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-container p {
+    margin: 0;
+}
+
+.footer-container ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer-container ul li {
+    margin-left: 20px;
+}
+
+.footer-container ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-container ul li a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .team {
+        flex-direction: column;
+    }
+    
+    .team-member {
+        margin-bottom: 30px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">YourLogo</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>About Us</h1>
+            <p>We are dedicated to providing the best service in the industry. Learn more about our journey and our team.</p>
+        </div>
+    </section>
+    
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>Our Mission</h2>
+                <p>Our mission is to deliver high-quality products that bring value to our customers. We strive for excellence in everything we do and are committed to continuous improvement.</p>
+                <h2>Our Values</h2>
+                <p>Integrity, innovation, and customer satisfaction are the core values that drive our company. We believe in building lasting relationships with our clients and partners.</p>
+                <h2>Our Team</h2>
+                <div class="team">
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150" alt="Team Member">
+                        <h3>John Doe</h3>
+                        <p>CEO</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150" alt="Team Member">
+                        <h3>Jane Smith</h3>
+                        <p>CTO</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150" alt="Team Member">
+                        <h3>Sam Wilson</h3>
+                        <p>Lead Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 YourCompany. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
